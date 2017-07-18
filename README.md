@@ -1,3 +1,7 @@
+# Try it here!
+
+* https://fantasy-baseball-backend.herokuapp.com/
+
 # BYOB
 
 ## npm install
