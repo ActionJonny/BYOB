@@ -143,7 +143,7 @@ app.delete('/api/v1/teams/:id', (request, response) => {
 });
 
 app.listen(app.get('port'), () => {
-  (`port is running on ${app.get('port')}`);
+  console.log(`port is running on localhost:${app.get('port')}`);
 });
 
 module.exports = app;

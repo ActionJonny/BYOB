@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
       table.increments('id').primary();
       table.string('position');
 
-      table.timestamps();
+      table.timestamps(true, true);
     }),
 
     knex.schema.createTable('batters', (table) => {
@@ -35,7 +35,7 @@ exports.up = function(knex, Promise) {
       table.foreign('player_id')
         .references('players.id');
 
-      table.timestamps();
+      table.timestamps(true, true);
     }),
 
     knex.schema.createTable('pitchers', (table) => {
@@ -63,7 +63,7 @@ exports.up = function(knex, Promise) {
       table.foreign('player_id')
         .references('players.id');
 
-      table.timestamps();
+      table.timestamps(true, true);
     })
   ]);
 };
