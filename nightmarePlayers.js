@@ -6,7 +6,7 @@ const nightmare = Nightmare({ show: true });
 
 nightmare
   .viewport(1500, 1500)
-  .goto('http://www.baseball-reference.com/leagues/MLB/2016-standard-fielding.shtml')
+  .goto('http://www.baseball-reference.com/leagues/MLB/2019-standard-fielding.shtml')
   .evaluate(() => {
     let statArr = [];
     let arr = [];
